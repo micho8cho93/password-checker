@@ -1,5 +1,3 @@
-#create a password strength checking program
-#the program should check the password and then tell the user if it is weak, medium or strong
 import string
 
 def punctuation(password):
@@ -18,7 +16,7 @@ def letters(password):
     for i in password:
         if i in string.ascii_letters:
             return True
-        return False
+    return False
 
 def checker():
     password = input("Enter your password: ")
@@ -35,9 +33,3 @@ def checker():
     return
 
 checker()
-#weak passwords only have characters
-
-#medium passwords have characters and numbers
-
-#strongs passwords have characters, numbers and special characters
-
